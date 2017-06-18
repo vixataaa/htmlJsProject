@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="text-center">
+        <h1><u>{{title}}</u></h1>
+    </div>
+</div>
+
+<form id="commentForm">
+    <div class="form-group">
+        <label for="comment-text">Write a comment:</label>
+        <textarea class="form-control" rows="5" id="comment-text" placeholder="Comment here...."></textarea>
+    </div>
+    <button type="button" id="add-comment-btn" class="btn btn-success">Comment</button>
+</form>
+<div class="container">
+    <div class="row">
+        <div class="text-center">
+            <h3>[{{title}}] comments: </h3>
+        </div>
+    </div>
+    {{#each replies}}
+    <div class="row">
+        <div class="col-sm-6 col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <strong>{{author}}</strong> <span class="text-muted">commented on {{timestamp}}</span>
+                </div>
+                <div class="panel-body">
+                    {{text}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- NEW COMMENT TEMPLATE --}} {{/each}}
+</div>
