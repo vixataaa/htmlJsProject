@@ -1,32 +1,6 @@
 {
   "users": [
-    {
-      "username": "333333",
-      "passHash": "95e229d8aca716874c8feca1501379e06f239d03",
-      "id": "33f8cad2-4a3d-4578-80d1-e6bf216eb780"
-    }
   ],
   "posts": [
-    {
-      "author": "333333",
-      "authorId": "33f8cad2-4a3d-4578-80d1-e6bf216eb780",
-      "title": "First post",
-      "replies": [
-        {
-          "author": "333333",
-          "authorId": "33f8cad2-4a3d-4578-80d1-e6bf216eb780",
-          "text": "First comment",
-          "timestamp": "18/6/2017 -- 18:8"
-        },
-        {
-          "author": "333333",
-          "authorId": "33f8cad2-4a3d-4578-80d1-e6bf216eb780",
-          "text": "fffff",
-          "timestamp": "18/6/2017 -- 18:11"
-        }
-      ],
-      "titleLower": "first post",
-      "id": "891c7cf5-6838-468a-b32d-a5e56413bbac"
-    }
   ]
 }
