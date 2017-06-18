@@ -72,7 +72,13 @@ const postController = function() {
         }
 
         const today = new Date();
-        const timestampString = `${today.getDate()}/${today.getMonth()}/${today.getFullYear()} -- ${today.getHours()}:${today.getMinutes()}`;
+
+        let minutes = today.getMinutes();
+        if(today.getMinutes < 10) {
+            minutes = '0' + today.getMinutes();
+        }
+
+        const timestampString = `${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()} -- ${today.getHours()}:${minutes}`;
 
         const post = {
             author : author,
@@ -99,7 +105,13 @@ const postController = function() {
         }
 
         const today = new Date();
-        const timestampString = `${today.getDate()}/${today.getMonth()}/${today.getFullYear()} -- ${today.getHours()}:${today.getMinutes()}`;
+
+        let minutes = today.getMinutes();
+        if(today.getMinutes < 10) {
+            minutes = '0' + today.getMinutes();
+        }
+
+        const timestampString = `${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()} -- ${today.getHours()}:${minutes}`;
 
         const comment = {
             author : author,
