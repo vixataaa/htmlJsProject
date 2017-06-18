@@ -5,7 +5,7 @@
 	- Run `npm install` in the repository`s folder
 	- Run `npm start` or `node app.js` and open `127.0.0.1:5000` in your browser.
 - ### Live link of the application:
-	- `coming soon`
+	- `https://cryptic-temple-49132.herokuapp.com/`
 
 
 
